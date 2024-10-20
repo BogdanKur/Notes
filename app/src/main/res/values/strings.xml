@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="addMenuItemTitle">добавить</string>
+    <string name="refacrorMenuItemTitle">изменить</string>
+    <string name="mainMenuItemTitle">главное меню</string>
+    <string name="btnSaveText">Сохранить</string>
+    <string name="btnEditText">Изменить</string>
+</resources>

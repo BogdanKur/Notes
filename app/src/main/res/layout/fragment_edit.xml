@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.notes.EditViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        tools:context=".AddFragment">
+        
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:background="@color/grayTextColor"
+            app:titleTextColor="@color/white"
+            android:id="@+id/toolbar"/>
+
+        <EditText
+            android:text="@={viewModel.editNotes}"
+            android:id="@+id/etNameOfNotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"/>
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="170dp"
+            android:layout_height="45dp"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:text="@string/btnEditText"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:background="@color/black"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"/>
+    </LinearLayout>
+</layout>
